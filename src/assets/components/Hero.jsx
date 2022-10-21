@@ -1,28 +1,28 @@
-import React from 'react'
+import ProfilePhoto from '../img/profile/1_crop.jpg'
 
 export const Hero = () => {
 
   const links = [
     {
       id: '1',
-      url: 'https://www.instagram.com/pasabaaa/',
+      url: 'https://twitter.com/pasabaaa',
       icon: 'bi bi-twitter',
       rel: 'noopener noreferrer'
     },
     {
-      id: '1',
-      url: 'https://www.instagram.com/pasabaaa/',
+      id: '2',
+      url: 'https://github.com/pasabaa',
       icon: 'bi bi-github',
       rel: 'noopener noreferrer'
     },
     {
-      id: '1',
+      id: '3',
       url: 'https://www.instagram.com/pasabaaa/',
       icon: 'bi bi-linkedin',
       rel: 'noopener noreferrer'
     },
     {
-      id: '1',
+      id: '4',
       url: 'https://www.instagram.com/pasabaaa/',
       icon: 'bi bi-instagram',
       rel: 'noopener noreferrer'
@@ -45,7 +45,7 @@ export const Hero = () => {
                 {
                   links.map(link => {
                     return(
-                      <a className='text-2xl' href={link.url}><i className={link.icon}></i></a>
+                      <a target={'_blank'} rel={link.rel} key={link.id} className='text-2xl' href={link.url}><i className={link.icon}></i></a>
                     )
                   })
                 }
@@ -55,7 +55,7 @@ export const Hero = () => {
               </div>
             </div>
             <div>
-              <img className='rounded-3xl object-scale-down h-96 sm:hidden' src="/img/profile/1_crop.jpg" alt="" />
+              <img className='rounded-3xl object-scale-down h-96 sm:hidden' src={ProfilePhoto} alt="" />
             </div>
           </div>
         </div>
