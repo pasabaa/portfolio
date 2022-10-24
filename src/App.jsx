@@ -13,10 +13,9 @@ function App() {
       <AboutSection 
         title={'Sobre Mí'} 
         subtitle={'Hola, un gusto conocerte. Toma un segundo para ver.'} 
-        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus feugiat metus, tempus gravida felis iaculis et. Praesent consequat ex a mi ultrices imperdiet. Nullam a purus id sem rutrum semper quis porta magna.'}
+        text={'Egresado en la carrera Tecnologías de la Información y la Comunicación en el área Entornos Virtuales y Negocios Digitales. Interesado principalmente en programación y desarrollo web del lado Front End, además, del Diseño Digital, sin embargo, estoy abierto a otros conocimientos de caracter tecnológico.'}
         titleColor={'gray'}
         subColor={'black'}
-        textColor={'white'}
       />
       <ExperienceSection />
       <ProjectSection />

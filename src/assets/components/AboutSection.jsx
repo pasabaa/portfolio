@@ -1,8 +1,11 @@
 import React from 'react'
+import { Navbar } from './Navbar'
 
-export const AboutSection = ({title, subtitle, text, titleColor, subColor, textColor}) => {
+export const AboutSection = ({title, subtitle, text, titleColor, subColor}) => {
   return (
-    <div className='h-screen bg-red-500 flex items-center justify-center'>
+  <>  
+    <Navbar />
+    <div className='h-screen bg-red-500 flex items-center justify-center' id='about'>
         <div className='w-6/12 mx-auto sm:w-10/12'>
             <div className='flex gap-6 sm:flex-col'>
                 <div className='text-end max-w-xs sm:text-start'>
@@ -10,10 +13,11 @@ export const AboutSection = ({title, subtitle, text, titleColor, subColor, textC
                     <h2 className={`text-xl font-bold text-${subColor}-100`}>{subtitle}</h2>
                 </div>
                 <div className='text-start max-w-sm'>
-                    <p className={`text-sm text-${textColor} font-light leading-loose`}>{text}</p>
+                    <p className={`text-base text-gray-200 font-light leading-loose`}>{text}</p>
                 </div>
             </div>
         </div>
     </div>
+  </>
   )
 }

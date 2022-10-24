@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export const ProjectSection = () => {
 
@@ -46,7 +47,7 @@ export const ProjectSection = () => {
 
 
   return (
-    <div className='py-64 h-100 bg-white flex items-center justify-center'>
+    <div className='py-64 h-100 bg-white flex items-center justify-center' id='projects'>
         <div className='w-5/12 mx-auto sm:w-10/12'>
             <div className='flex flex-wrap gap-4 justify-between'>
 
@@ -58,10 +59,14 @@ export const ProjectSection = () => {
                 {
                     experience.slice(0).reverse().map(item => {
                         return(
-                            <div key={item.id} className='max-w-sm p-6 rounded-xl bg-gray-300/10 shadow-sm last:max-w-fit sm:last:max-w-sm hover:bg-gray-300/20 transition-all ease-in-out'>
+                            <motion.div 
+                              whileHover={{ scale: 1.05 }}
+                              transition={{ type: 'spring', duration: 0.02 }}
+                              key={item.id} 
+                              className='max-w-sm p-6 rounded-xl bg-gray-300/10 shadow-sm last:max-w-fit sm:last:max-w-sm hover:bg-gray-300/20 transition-all ease-in-out cursor-default'>
                                 <h1 className='text-black font-bold'>{item.title}</h1>
                                 <p className='text-gray-400 text-sm mt-4'>{item.description}</p>
-                            </div>
+                            </motion.div>
                         )
                     })
                 }

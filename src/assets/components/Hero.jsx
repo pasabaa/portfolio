@@ -1,4 +1,5 @@
 import ProfilePhoto from '../img/profile/1_crop.jpg'
+import { motion } from "framer-motion"
 
 export const Hero = () => {
 
@@ -27,13 +28,17 @@ export const Hero = () => {
       icon: 'bi bi-instagram',
       rel: 'noopener noreferrer'
     }
+
   ]
 
   return (
-        <div className='h-screen'>
-          <div className='bg-white/10 h-full w-full relative backdrop-blur-2xl flex' />
-          <div className='h-full w-full inset-0 absolute flex items-center justify-center'>
-            <span className='w-64 h-64 bg-red-600 rounded-full absolute -z-10'></span>
+        <div className='h-screen overflow-hidden' id='top'>
+          <div className='bg-white/10 h-full w-full relative backdrop-blur-2xl flex overflow-hidden' />
+          <div className='h-full w-full inset-0 absolute flex items-center justify-center overflow-hidden'>
+            <motion.span 
+              animate={{scale: [0.9, 1.10, 1.10, 0.9]}} 
+              transition={{type: 'spring', bounce:0.15, repeat: Infinity, repeatType: 'mirror', duration: 2}} 
+              className='w-64 h-64 bg-red-600 rounded-full absolute -z-10' />
           </div>
           <div className='h-full w-full inset-0 absolute flex items-center justify-center z-10 gap-16 sm:flex-col sm:p-16'>
             <div>
