@@ -68,7 +68,7 @@ export const FooterSection = () => {
                             {
                                 links.map(link => {
                                     return(
-                                        <a key={link.id} className='text-sm text-gray-400' href={link.url}>{link.name}</a>
+                                        <a key={link.id} aria-label={link.name} title={link.name} className='text-sm text-gray-500' href={link.url}>{link.name}</a>
                                     )
                                 })
                             }
@@ -79,7 +79,7 @@ export const FooterSection = () => {
                             {
                                 projects.map(project => {
                                     return(
-                                        <a key={project.id} className='text-sm text-gray-400' href={project.url}>{project.name}</a>
+                                        <a key={project.id} aria-label={project.name} title={project.name} className='text-sm text-gray-500' href={project.url}>{project.name}</a>
                                     )
                                 })
                             }

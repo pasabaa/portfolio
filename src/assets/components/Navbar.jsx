@@ -37,9 +37,9 @@ export const Navbar = () => {
                 <div>
                     <ul className='font-bold flex gap-4'>
                         <li className='text-white'>
-                            <a href="#about">
+                            <button onClick={goToTop}>
                                 <img src={Logo} alt="Logo pasabaa" className='object-scale-down h-12 invert' />
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -51,10 +51,11 @@ export const Navbar = () => {
                         {
                             links.map(link => {
                                 return(
-                                    <li className='text-white hover:text-gray-300 ease-in-out transition-all'>
+                                    <li key={link.id} className='text-white hover:text-gray-300 ease-in-out transition-all cursor-pointer'>
                                         <Link 
                                             activeClass='active' 
-                                            spy='true' smooth='true' 
+                                            spy
+                                            smooth='true' 
                                             offset={-80} 
                                             duration={400} 
                                             to={link.section}>{link.name}</Link></li>

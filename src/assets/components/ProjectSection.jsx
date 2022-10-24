@@ -47,7 +47,7 @@ export const ProjectSection = () => {
 
 
   return (
-    <div className='py-64 h-100 bg-white flex items-center justify-center' id='projects'>
+    <div className='py-64 h-100 bg-white/90 flex items-center justify-center' id='projects'>
         <div className='w-5/12 mx-auto sm:w-10/12'>
             <div className='flex flex-wrap gap-4 justify-between'>
 
@@ -65,7 +65,7 @@ export const ProjectSection = () => {
                               key={item.id} 
                               className='max-w-sm p-6 rounded-xl bg-gray-300/10 shadow-sm last:max-w-fit sm:last:max-w-sm hover:bg-gray-300/20 transition-all ease-in-out cursor-default'>
                                 <h1 className='text-black font-bold'>{item.title}</h1>
-                                <p className='text-gray-400 text-sm mt-4'>{item.description}</p>
+                                <p className='text-gray-500 text-sm mt-4 leading-relaxed'>{item.description}</p>
                             </motion.div>
                         )
                     })

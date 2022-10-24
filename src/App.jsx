@@ -14,7 +14,6 @@ function App() {
         title={'Sobre Mí'} 
         subtitle={'Hola, un gusto conocerte. Toma un segundo para ver.'} 
         text={'Egresado en la carrera Tecnologías de la Información y la Comunicación en el área Entornos Virtuales y Negocios Digitales. Interesado principalmente en programación y desarrollo web del lado Front End, además, del Diseño Digital, sin embargo, estoy abierto a otros conocimientos de caracter tecnológico.'}
-        titleColor={'gray'}
         subColor={'black'}
       />
       <ExperienceSection />

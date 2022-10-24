@@ -71,7 +71,7 @@ export const ExperienceSection = () => {
                               key={item.id} 
                               className='max-w-sm p-6 rounded-xl bg-zinc-900/20 shadow-sm last:max-w-fit sm:last:max-w-sm hover:bg-zinc-900/50 transition-all ease-in-out cursor-default'>
                                 <h1 className='text-white font-bold'>{item.title}</h1>
-                                <p className='text-gray-400 text-sm mt-4'>{item.description}</p>
+                                <p className='text-gray-400 text-sm mt-4 leading-relaxed'>{item.description}</p>
                             </motion.div>
                         )
                     })
