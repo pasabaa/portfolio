@@ -4,11 +4,13 @@ import { AboutSection } from './assets/components/AboutSection'
 import { ExperienceSection } from './assets/components/ExperienceSection'
 import { ProjectSection } from './assets/components/ProjectSection'
 import { FooterSection } from './assets/components/FooterSection'
+import { Building } from './assets/components/Building'
 
 function App() {
 
   return (
     <>
+    <Building />
       <Hero />
       <AboutSection 
         title={'Sobre Mí'} 

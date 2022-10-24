@@ -5,43 +5,52 @@ export const ProjectSection = () => {
 
     const experience = [
         {
-          id:  '1',
+          id: 1,
+          title: "Sitio para el DIF, Guanajuato, México",
+          description: "Automatización de las diferentes secciones de su sitio web, además de crear un apartado administrativo para gestionar diferentes datos de dichas secci ones, por ejemplo, títulos, imágenes y texto de las noticias que se presentan. Por otra parte, se modificó completamente la UI/UX de todo el sitio, para dar un salto a un diseño más contemporáneo. Se trabajo principalmente con el framework de PHP: Laravel, y otras herramientas y lenguajes más, Bootstrap, JavaScript, CSS y HTML.",
+        },
+        {
+          id: 2,
+          title: "Sitio para Presidencia Municipal, Guanajuato, México",
+          description: "Actualización del sitio web de la presidencia municipal, enfocado principalmente en frontend y rediseñando la UI/UX respectivamente, gestionado también, por la parte administrativa en el backend, la edición, eliminación y adición de diferentes datos para cada sección del sitio, además de utilizar principalmente el framework de PHP: Laravel, del mismo modo, Bootstrap como framework de diseño responsivo, además de JavaScript, CSS y HTML.",
+        },
+        {
+          id:  3,
           title: 'Timeline',
-          description: 'React JS es una librería con muchísimas funciones, las cuales he aprovechado para crear diferentes aplicaciones, un ejemplo, es este sitio web.',
+          description: 'Una aplicación para realizar sencillas lineas del tiempo, con eventos, fechas y elementos totalmente personalizables.',
           image: 'react.png',
         },
         {
-          id:  '2',
-          title: 'Game JS',
-          description: 'Mediante JavaScript he tenido la oportunidad de trabajar en diferentes aplicaciones, para la modificación del DOM, acciones y eventos, además de consumir APIS para obtentener datos, etc.',
-          image: 'javascript.png',
-    
-        },
-        {
-          id:  '3',
+          id:  4,
           title: 'Message Generator',
-          description: 'Trabajando desde CSS Grid a Flexbox para diferentes sitios, modificando elementos HTML, aplicando pseduo clases y elementos, para dar toques personalizados interesantes.',
+          description: 'Generador de mensajes de la aplicación de Google y demás interfaces.',
           image: 'css.png'
         }
         ,
         {
-          id:  '4',
+          id:  5,
           title: 'Gallery Fetch',
-          description: 'En el desarrollo de videojuegos, lo he trabajado a través de Unity 3D, con elementos básicos para crear uno, puntuaciones, cambios de escena, acciones, métodos y funciones.',
+          description: 'Un buscador de imágenes conectado con la API del sitio web Pixabay, donde se encuentran una gran diversidad de imágenes libres de derechos de autor',
           image: 'html.png',
         },
         {
-          id:  '5',
+          id:  6,
           title: 'Background Generator',
-          description: 'El software de Adobe, lo he utilizado para crear diferentes recursos gráficos, sea para videojuegos, diseños e ilustraciones, lo anterior con Adobe Illustrator, por otra parte, Adobe Premiere Pro, es dónde he realizado diferente contenido multimedia de edición de vídeos para creadores de contenido.',
+          description: 'Un simple generador de fondos con efecto blur, y demás cosas personalizables',
           image: 'html.png'
         },
         {
-          id:  '6',
+          id:  7,
           title: 'Portafolio',
           description: 'Este sitio web, está hecho con React JS y Tailwind CSS. Además cuenta con diferentes secciones y es un sitio totalmente responsivo.',
           image: 'html.png',
     
+        },
+        {
+          id:  68,
+          title: 'Music Player',
+          description: 'Esta es una aplicación hecha en React, Tailwind CSS, Redux y la API Shazam Core para traer información de canciones y artistas, además de reproducir un preview de las canciones.',
+          image: 'html.png',
         }
       ]
 

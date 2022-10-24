@@ -23,7 +23,7 @@ export const ExperienceSection = () => {
         ,
         {
           id:  '4',
-          title: 'Unity',
+          title: 'Unity 3D',
           description: 'En el desarrollo de videojuegos, lo he trabajado a través de Unity 3D, con elementos básicos para crear uno, puntuaciones, cambios de escena, acciones, métodos y funciones.',
         },
         {
