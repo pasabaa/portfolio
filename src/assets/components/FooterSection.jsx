@@ -4,19 +4,19 @@ export const FooterSection = () => {
     const links = [
         {
           id: '1',
-          url: 'https://www.instagram.com/pasabaaa/',
+          url: 'https://twitter.com/pasabaaa',
           name: 'Twitter',
           rel: 'noopener noreferrer'
         },
         {
           id: '2',
-          url: 'https://www.instagram.com/pasabaaa/',
+          url: 'https://github.com/pasabaa',
           name: 'GitHub',
           rel: 'noopener noreferrer'
         },
         {
           id: '3',
-          url: 'https://www.instagram.com/pasabaaa/',
+          url: 'https://www.linkedin.com/in/pablo-s%C3%A1nchez-8127ba221/',
           name: 'LinkedIn',
           rel: 'noopener noreferrer'
         },

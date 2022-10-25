@@ -17,7 +17,7 @@ export const Hero = () => {
     },
     {
       id: '3',
-      url: 'https://www.instagram.com/pasabaaa/',
+      url: 'https://www.linkedin.com/in/pablo-s%C3%A1nchez-8127ba221/',
       icon: 'bi bi-linkedin',
       rel: 'noopener noreferrer'
     },
