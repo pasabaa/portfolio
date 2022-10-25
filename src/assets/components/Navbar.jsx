@@ -25,6 +25,13 @@ export const Navbar = () => {
         }
     ]
 
+    const boxAnimation = {
+        initial: {y:'-100%', opacity:0},
+        exit: {y:'-100%', opacity:0, transition:{duration:0.1}},
+        animate: {y:'0', opacity: 1},
+        transition: {duration: 0.4, type: 'spring'}
+    }
+
     const menuAnimation = {
         initial: {opacity:0},
         exit: {opacity:0, transition:{duration:0.1}},
@@ -97,38 +104,35 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-    <AnimatePresence>
-            {
-                show &&
-                <motion.ul {...menuAnimation} className='font-bold flex flex-col gap-4 py-6'>
-                    <li className='text-white hover:text-gray-300 ease-in-out transition-all'><button onClick={goToTop}>Inicio</button></li>
-
-                    {
-                        
-                        links.map(link => {
-                            return(
-                                <li key={link.id} className='text-white hover:text-gray-300 ease-in-out transition-all cursor-pointer'>
-                                <Link 
-                                    activeClass='active' 
-                                    spy
-                                    smooth='true' 
-                                    offset={-80} 
-                                    duration={400} 
-                                    to={link.section}>{link.name}</Link></li>
-                            )
-                        })
-                            
-                    }
-                </motion.ul>
-            }
-
-
-
-
-            
-
-            </AnimatePresence>
         </div>
+
+        <AnimatePresence>
+            {
+            show &&
+                <motion.div {...boxAnimation} className='w-6/12 mx-auto sm:w-10/12 hidden sm:block'>
+                        <ul className='font-bold flex flex-col gap-4 py-6'>
+                            <li className='text-white hover:text-gray-300 ease-in-out transition-all'><button onClick={goToTop}>Inicio</button></li>
+
+                            {
+                                
+                                links.map(link => {
+                                    return(
+                                        <li key={link.id} className='text-white hover:text-gray-300 ease-in-out transition-all cursor-pointer'>
+                                        <Link 
+                                            activeClass='active' 
+                                            spy
+                                            smooth='true' 
+                                            offset={-80} 
+                                            duration={400} 
+                                            to={link.section}>{link.name}</Link></li>
+                                    )
+                                })
+                                    
+                            }
+                        </ul>
+                </motion.div>
+            }
+        </AnimatePresence>
     </div>
   )
 }
