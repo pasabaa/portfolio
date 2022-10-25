@@ -23,7 +23,7 @@ export const Building = () => {
             <div className='flex flex-col'>
                 <h1 className='text-red-500 text-3xl'><i class="bi bi-exclamation-triangle-fill"></i></h1>
                 <h1 className='text-gray-100 text-2xl font-bold my-4'>Aviso</h1>
-                <p className='text-gray-100 leading-relaxed text-sm'>Este sitio web, está aún en proceso de construcción, por lo que puede tener, entre otras cosas, fallas ortográficas, en la adaptabilidad en diferentes dispositivos, etc.</p>
+                <p className='text-gray-100 leading-relaxed text-sm'>Este sitio web, está aún en proceso de construcción, por lo que puede tener, entre otras cosas, fallas ortográficas y de redacción, en la adaptabilidad en diferentes dispositivos, etc.</p>
                 <button onClick={()=> {setshow(false)}} className='p-2 bg-gray-100 mt-4 rounded text-sm active:bg-gray-300'>Aceptar</button>
             </div>
         </motion.div> }
