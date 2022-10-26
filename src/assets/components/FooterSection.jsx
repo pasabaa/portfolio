@@ -30,25 +30,25 @@ export const FooterSection = () => {
   const projects = [
     {
       id: "1",
-      url: "https://www.instagram.com/pasabaaa/",
+      url: "https://pasabaa.github.io/timeline-vanilla/",
       name: "Timeline",
       rel: "noopener noreferrer",
     },
     {
       id: "2",
-      url: "https://www.instagram.com/pasabaaa/",
+      url: "https://pasabaa.github.io/bg-blur-generator/",
       name: "Background Generator",
       rel: "noopener noreferrer",
     },
     {
       id: "3",
-      url: "https://www.instagram.com/pasabaaa/",
+      url: "https://pasabaa.github.io/message-generator/",
       name: "Message Generator",
       rel: "noopener noreferrer",
     },
     {
       id: "4",
-      url: "https://www.instagram.com/pasabaaa/",
+      url: "https://pasabaa.github.io/fetch-images/",
       name: "Gallery Fetch",
       rel: "noopener noreferrer",
     },
